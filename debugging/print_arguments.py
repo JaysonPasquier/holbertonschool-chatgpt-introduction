@@ -1,8 +1,6 @@
 #!/usr/bin/python3
 import sys
 
-if len(sys.argv) > 1:
-    for i, arg in enumerate(sys.argv):
-        print(f"{arg}")
-else:
-    print("No arguments were provided.")
+# Start iterating from the first argument (index 1) instead of index 0
+for arg in sys.argv[1:]:
+    print(arg)
